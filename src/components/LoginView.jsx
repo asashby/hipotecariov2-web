@@ -846,7 +846,7 @@ const LoginView = () => {
                             Recordar mi documento
                         </div>
                         <div
-                            className="divField virtual-keyboard-field"
+                            className="divField virtual-keyboard-field font-family"
                             style={{
                                 fontSize:"small",
                                 marginBottom:"0",
