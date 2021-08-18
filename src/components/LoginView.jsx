@@ -54,16 +54,13 @@ const LoginView = () => {
                         boxShadow:"0 6px 10px 0 rgba(0,0,0,.1)",
                         borderRadius:"15px",
                         width:"100%",
-                        maxWidth:"530px",
+                        maxWidth:"482px",
                         background:"#fff",
                         display:"block",
                         position:"relative",
-                        padding:"24px",
-                        margin:"auto"
+                        margin:"auto",
+                        padding:"24px"
                     }}>
-                    <CardHeader>
-
-                    </CardHeader>
                     <CardContent
                         className="mat-card-content"
                         style={{
@@ -71,7 +68,8 @@ const LoginView = () => {
                             display:"block",
                             marginBottom:"16px",
                             textAlign:"center",
-                            boxSizing:"border-box"
+                            boxSizing:"border-box",
+                            padding:"0"
                         }}>
                         <div
                             className="divLogo"
@@ -143,27 +141,36 @@ const LoginView = () => {
                                     marginBottom:"15px",
                                     textAlign:"left",
                                     boxSizing:"border-box",
-                                    display:"block",
-                                    marginBlockStart:"1.67em",
-                                    marginBlockEnd:"1.67em"
+                                    display:"block"
                                 }}>
                                 <h5
+                                    className="font-family"
                                     style={{
-                                        fontFamily:"%PUBLIC_URL%/roboto-medium.ttf",
                                         fontWeight:"500",
                                         fontSize:"23px",
                                         fontStyle:"normal",
                                         lineHeight:"27px",
                                         color:"#fff",
+                                        marginTop:"0px",
                                         marginBottom:".5rem"
                                     }}>
                                     <span
-                                        className="material-icons">
+                                        className="material-icons"
+                                        style={{
+                                            fontWeight:"500",
+                                            fontSize:"23px",
+                                            fontStyle:"normal",
+                                            lineHeight:"27px",
+                                            color:"#fff",
+                                            boxSizing:"border-box",
+                                            paddingRight:"10px"
+                                        }}>
                                         {exclamationTriangle}
                                     </span>
                                     Evitemos las estafas.
                                 </h5>
                                 <p
+                                    className="font-family margin-top"
                                     style={{
                                         fontSize:"20px",
                                         fontWeight:"400",
@@ -172,7 +179,6 @@ const LoginView = () => {
                                         color:"#fff",
                                         marginBottom:"1rem",
                                         boxSizing:"border-box",
-                                        marginBlockStart:"1em",
                                         marginBlockEnd:"1em"
                                     }}>
                                     Nunca compartas tu mail, clave personal, usuario ni token. Ni siquiera con nosotros.
@@ -182,7 +188,7 @@ const LoginView = () => {
 
                         {/*Document number field*/}
                         <div
-                            className="divField"
+                            className="divField font-family"
                             style={{
                                 width:"85%",
                                 margin:"0 auto",
@@ -190,21 +196,19 @@ const LoginView = () => {
                                 boxSizing:"border-box",
                                 display:"block",
                                 fontSize:"14px",
-                                fontFamily:"%PUBLIC_URL%/roboto-medium.otf",
                                 fontWeight:"400",
                                 lineHeight:"1.5",
                                 WebkitTextSizeAdjust:"100%",
                                 WebkitTapHighlightColor:"transparent"
                             }}>
                             <div
-                                className="mat-form-field"
+                                className="mat-form-field font-family"
                                 style={{
                                     display:"inline-block",
                                     position:"relative",
                                     textAlign:"left",
                                     fontWeight:"400",
                                     lineHeight:"1.125",
-                                    fontFamily:"%PUBLIC_URL%/roboto-medium.otf",
                                     width:"100%",
                                     boxSizing:"border-box"
                                 }}>
@@ -293,7 +297,7 @@ const LoginView = () => {
                                                     border:"transparent"
                                                 }}/>
                                             <span
-                                                className="mat-form-field-label-wrapper"
+                                                className="mat-form-field-label-wrapper font-family"
                                                 style={{
                                                     position:"absolute",
                                                     left:"0",
@@ -305,8 +309,7 @@ const LoginView = () => {
                                                     textAlign:"left",
                                                     fontSize:"inherit",
                                                     fontWeight:"400",
-                                                    lineHeight:"1.125",
-                                                    fontFamily:"%PUBLIC_URL%/roboto-medium.otf"
+                                                    lineHeight:"1.125"
                                                 }}>
                                                 <label
                                                     className="mat-form-field-label ng-tns-c11-0 ng-star-inserted"
@@ -376,7 +379,7 @@ const LoginView = () => {
 
                         {/*User field*/}
                         <div
-                            className="divField"
+                            className="divField font-family"
                             style={{
                                 width:"85%",
                                 margin:"0 auto",
@@ -384,21 +387,19 @@ const LoginView = () => {
                                 boxSizing:"border-box",
                                 display:"block",
                                 fontSize:"14px",
-                                fontFamily:"%PUBLIC_URL%/roboto-medium.otf",
                                 fontWeight:"400",
                                 lineHeight:"1.5",
                                 WebkitTextSizeAdjust:"100%",
                                 WebkitTapHighlightColor:"transparent"
                             }}>
                             <div
-                                className="mat-form-field"
+                                className="mat-form-field font-family"
                                 style={{
                                     display:"inline-block",
                                     position:"relative",
                                     textAlign:"left",
                                     fontWeight:"400",
                                     lineHeight:"1.125",
-                                    fontFamily:"%PUBLIC_URL%/roboto-medium.otf",
                                     width:"100%",
                                     boxSizing:"border-box"
                                 }}>
@@ -487,7 +488,7 @@ const LoginView = () => {
                                                     border:"transparent"
                                                 }}/>
                                             <span
-                                                className="mat-form-field-label-wrapper"
+                                                className="mat-form-field-label-wrapper font-family"
                                                 style={{
                                                     position:"absolute",
                                                     left:"0",
@@ -499,8 +500,7 @@ const LoginView = () => {
                                                     textAlign:"left",
                                                     fontSize:"inherit",
                                                     fontWeight:"400",
-                                                    lineHeight:"1.125",
-                                                    fontFamily:"%PUBLIC_URL%/roboto-medium.otf"
+                                                    lineHeight:"1.125"
                                                 }}>
                                                 <label
                                                     className="mat-form-field-label ng-tns-c11-0 ng-star-inserted"
@@ -604,7 +604,7 @@ const LoginView = () => {
 
                         {/*Password field*/}
                         <div
-                            className="divField"
+                            className="divField font-family"
                             style={{
                                 width:"85%",
                                 margin:"0 auto",
@@ -612,21 +612,19 @@ const LoginView = () => {
                                 boxSizing:"border-box",
                                 display:"block",
                                 fontSize:"14px",
-                                fontFamily:"%PUBLIC_URL%/roboto-medium.otf",
                                 fontWeight:"400",
                                 lineHeight:"1.5",
                                 WebkitTextSizeAdjust:"100%",
                                 WebkitTapHighlightColor:"transparent"
                             }}>
                             <div
-                                className="mat-form-field"
+                                className="mat-form-field font-family"
                                 style={{
                                     display:"inline-block",
                                     position:"relative",
                                     textAlign:"left",
                                     fontWeight:"400",
                                     lineHeight:"1.125",
-                                    fontFamily:"%PUBLIC_URL%/roboto-medium.otf",
                                     width:"100%",
                                     boxSizing:"border-box"
                                 }}>
@@ -715,7 +713,7 @@ const LoginView = () => {
                                                     border:"transparent"
                                                 }}/>
                                             <span
-                                                className="mat-form-field-label-wrapper"
+                                                className="mat-form-field-label-wrapper font-family"
                                                 style={{
                                                     position:"absolute",
                                                     left:"0",
@@ -728,7 +726,6 @@ const LoginView = () => {
                                                     fontSize:"inherit",
                                                     fontWeight:"400",
                                                     lineHeight:"1.125",
-                                                    fontFamily:"%PUBLIC_URL%/roboto-medium.otf"
                                                 }}>
                                                 <label
                                                     className="mat-form-field-label ng-tns-c11-0 ng-star-inserted"
@@ -830,21 +827,17 @@ const LoginView = () => {
                             </div>
                         </div>
                         <div
-                            className="divField"
+                            className="divField checkbox-field font-family"
                             style={{
-                                fontFamily:"%PUBLIC_URL%/roboto-medium.ttf",
                                 fontSize:"small",
-                                marginTop:"10px",
-                                margin:"0 auto",
                                 textAlign:"left",
                                 boxSizing:"border-box",
                                 display:"block"
                             }}>
                             <Checkbox
-                                className="mat-checkbox"
+                                className="mat-checkbox font-family"
                                 style={{
                                     marginLeft:"8px",
-                                    fontFamily:"%PUBLIC_URL%/roboto-medium.ttf",
                                     cursor:"pointer",
                                     color:'#f37320'
                                 }}>
@@ -853,19 +846,19 @@ const LoginView = () => {
                             Recordar mi documento
                         </div>
                         <div
-                            className="divField"
+                            className="divField virtual-keyboard-field"
                             style={{
                                 fontSize:"small",
                                 marginBottom:"0",
                                 width:"85%",
-                                margin:"0 auto",
                                 boxSizing:"border-box"
                             }}>
                             <span
                                 style={{
                                     boxSizing:"border-box",
                                     fontSize:"small",
-                                    textAlign:"left"
+                                    textAlign:"left",
+                                    padding:"13px"
                                 }}>
                                 <div
                                     style={{
@@ -875,6 +868,7 @@ const LoginView = () => {
                                         margin:"0px",
                                         marginLeft:"1px",
                                         marginTop:"5px",
+                                        marginRight:"5px",
                                         boxSizing:"border-box"
                                     }}>
                                     <i
@@ -922,6 +916,7 @@ const LoginView = () => {
                                     textAlign:"center"
                                 }}>
                                 <Button
+                                    className="font-family"
                                     style={{
                                         marginLeft:"0",
                                         marginRight:"0",
@@ -932,7 +927,6 @@ const LoginView = () => {
                                         borderRadius:"25px",
                                         color:"#fff",
                                         backgroundColor:"#f37320",
-                                        fontFamily:"%PUBLIC_URL%/roboto-medium.ttf",
                                         boxShadow:"none",
                                         fontSize:"16px",
                                         fontWeight:"500",
@@ -951,34 +945,33 @@ const LoginView = () => {
                         </div>
                     </div>
                     <div
+                        className="font-family"
                         style={{
                             textAlign:"center",
                             boxSizing:"border-box",
-                            display:"block",
-                            fontFamily:"%PUBLIC_URL%/roboto-medium.ttf"
+                            display:"block"
                         }}>
                         <a
-                            className="enlace"
+                            className="enlace font-family"
                             style={{
                                 cursor:"pointer",
                                 color:"#f37320",
                                 fontSize:"small",
                                 margin:"0",
                                 padding:"0",
-                                fontFamily:"%PUBLIC_URL%/roboto-medium.ttf",
                                 boxSizing:"border-box",
                                 textAlign:"center"
                             }}>
                             Recuperar mi clave 
                         </a>
                         <span
+                            className="font-family"
                             style={{
                                 marginLeft:"15px",
                                 marginRight:"15px",
                                 color:"#b0b8bf",
                                 boxSizing:"border-box",
                                 textAlign:"center",
-                                fontFamily:"%PUBLIC_URL%/roboto-medium.ttf",
                                 fontSize:"1rem",
                                 fontWeight:"400",
                                 lineHeight:"1.5"
@@ -986,13 +979,12 @@ const LoginView = () => {
                             |
                         </span>
                         <a
-                            className="enlace"
+                            className="enlace font-family"
                             style={{
                                 textDecoration:"none",
                                 cursor:"pointer",
                                 color:"#f37320",
                                 fontSize:"small",
-                                fontFamily:"%PUBLIC_URL%/roboto-medium.ttf",
                                 boxSizing:"border-box"
                             }}>
                             Recuperar mi usuario
@@ -1006,14 +998,13 @@ const LoginView = () => {
                             display:"block"
                         }}>
                         <a
-                            className="enlace"
+                            className="enlace font-family"
                             style={{
                                 cursor:"pointer",
                                 color:"#f37320",
                                 fontSize:"small",
                                 margin:"0",
-                                padding:"0",
-                                fontFamily:"%PUBLIC_URL%/roboto-medium.ttf"
+                                padding:"0"
                             }}>
                             SOY NUEVO EN HOME BANKING
                         </a>
@@ -1030,11 +1021,10 @@ const LoginView = () => {
                             boxSizing:"border-box"
                         }}>
                         <div
-                            className="col-12 text4 m_t_8 text-center"
+                            className="col-12 text4 m_t_8 text-center font-family"
                             style={{
                                 marginTop:"8px",
                                 color:"#818181",
-                                fontFamily:"%PUBLIC_URL%/roboto-medium.otf",
                                 fontSize:"14px",
                                 textAlign:"center",
                                 flex:"0 0 100%",
@@ -1048,6 +1038,7 @@ const LoginView = () => {
                             }}>
                             Si tenés dudas mirá este 
                             <a
+                                className="font-family"
                                 style={{
                                     textDecoration:"underline",
                                     cursor:"pointer",
@@ -1055,7 +1046,6 @@ const LoginView = () => {
                                     margin:"4px",
                                     padding:"0",
                                     boxSizing:"border-box",
-                                    fontFamily:"%PUBLIC_URL%/roboto-medium.otf",
                                     fontSize:"14px",
                                     textAlign:"center"
                                 }}>
@@ -1065,9 +1055,9 @@ const LoginView = () => {
                     </div>
                 </Card>
                 <div
+                    className="font-family"
                     style={{
                         boxSizing:"border-box",
-                        fontFamily:"%PUBLIC_URL%/roboto-medium.ttf",
                         fontSize:"1rem",
                         fontWeight:"400",
                         lineHeight:"1.5",
@@ -1075,7 +1065,7 @@ const LoginView = () => {
                         textAlign:"left"
                     }}>
                     <div
-                        className="row justify-content-center align-items-center mt-15"
+                        className="row justify-content-center align-items-center mt-15 font-family"
                         style={{
                             marginTop:"15px",
                             alignItems:"center",
@@ -1085,7 +1075,6 @@ const LoginView = () => {
                             marginRight:"-15px",
                             marginLeft:"-15px",
                             boxSizing:"border-box",
-                            fontFamily:"%PUBLIC_URL%/roboto-medium.ttf",
                             fontSize:"1rem",
                             fontWeight:"400",
                             lineHeight:"1.5",
@@ -1093,21 +1082,20 @@ const LoginView = () => {
                             textAlign:"left"
                         }}>
                         <div
-                            className="col-12 text-center col-md-auto"
+                            className="col-12 text-center col-md-auto font-family"
                             style={{
                                 textAlign:"center",
                                 paddingRight:"15px",
                                 paddingLeft:"15px",
                                 boxSizing:"border-box",
                                 display:"block",
-                                fontFamily:"%PUBLIC_URL%/roboto-medium.ttf",
                                 fontSize:"1rem",
                                 fontWeight:"400",
                                 lineHeight:"1.5",
                                 color:"#212529"
                             }}>
                             <a
-                                className="enlace terminosCondiciones"
+                                className="enlace terminosCondiciones font-family"
                                 style={{
                                     textDecoration:"none",
                                     color:"#fff",
@@ -1116,7 +1104,6 @@ const LoginView = () => {
                                     cursor:"pointer",
                                     margin:"0",
                                     padding:"0",
-                                    fontFamily:"%PUBLIC_URL%/roboto-medium.ttf",
                                     boxSizing:"border-box",
                                     textAlign:"center"
                                 }}>
@@ -1137,7 +1124,7 @@ const LoginView = () => {
                             |
                         </div>
                         <div
-                            className="col-12 text-center col-md-auto"
+                            className="col-12 text-center col-md-auto font-family"
                             style={{
                                 textAlign:"center",
                                 position:"relative",
@@ -1145,14 +1132,13 @@ const LoginView = () => {
                                 paddingLeft:"15px",
                                 boxSizing:"border-box",
                                 display:"block",
-                                fontFamily:"%PUBLIC_URL%/roboto-medium.ttf",
                                 fontSize:"1rem",
                                 fontWeight:"400",
                                 lineHeight:"1.5",
                                 color:"#212529"
                             }}>
                             <a
-                                className="enlace terminosCondiciones"
+                                className="enlace terminosCondiciones font-family"
                                 style={{
                                     textDecoration:"none",
                                     color:"#fff",
@@ -1161,7 +1147,6 @@ const LoginView = () => {
                                     cursor:"pointer",
                                     margin:"0",
                                     padding:"0",
-                                    fontFamily:"%PUBLIC_URL%/roboto-medium.otf",
                                     fontWeight:"400",
                                     lineHeight:"1.5"
                                 }}>
@@ -1182,7 +1167,7 @@ const LoginView = () => {
                             |
                         </div>
                         <div
-                            className="col-12 text-center col-md-auto"
+                            className="col-12 text-center col-md-auto font-family"
                             style={{
                                 textAlign:"center",
                                 position:"relative",
@@ -1190,14 +1175,13 @@ const LoginView = () => {
                                 paddingLeft:"15px",
                                 boxSizing:"border-box",
                                 display:"block",
-                                fontFamily:"%PUBLIC_URL%/roboto-medium.otf",
                                 fontSize:"1rem",
                                 fontWeight:"400",
                                 lineHeight:"1.5",
                                 color:"#212529"
                             }}>
                             <a
-                                className="enlace terminosCondiciones"
+                                className="enlace terminosCondiciones font-family"
                                 style={{
                                     textDecoration:"none",
                                     color:"#fff",
@@ -1206,7 +1190,6 @@ const LoginView = () => {
                                     cursor:"pointer",
                                     margin:"0",
                                     padding:"0",
-                                    fontFamily:"%PUBLIC_URL%/roboto-medium.otf",
                                     fontWeight:"400",
                                     lineHeight:"1.5"
                                 }}>

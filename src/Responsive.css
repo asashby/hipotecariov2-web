@@ -79,3 +79,23 @@ input {
     width: 100%;
     font-size: 75%;
 }
+
+.checkbox-field {
+    margin-top: 10px;
+    margin-left: 23px;
+    margin-right: 23px;
+}
+
+.virtual-keyboard-field {
+    text-align: left;
+    margin-left: 23px;
+    margin-right: 23px;
+}
+
+.font-family{
+    font-family: 'Roboto', sans-serif;
+}
+
+.margin-top{
+    margin-top: 0px;
+}
