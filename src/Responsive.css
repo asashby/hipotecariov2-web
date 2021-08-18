@@ -1,0 +1,81 @@
+.mat-form-field-label {    
+    transform: translateY(-1.28125em) scale(.75) perspective(100px) translateZ(.001px);
+    width: 133.33333%
+}
+
+@media (min-width: 576px){
+    .col-sm-auto {
+        flex: 0 0 auto;
+        width: auto;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 768px){
+    .col-md-auto {
+        flex: 0 0 auto;
+        width: auto;
+        max-width: 100%;
+    }
+}
+
+.mat-form-field-infix {
+    padding: .4375em 0;
+    border-top: .84375em solid transparent;
+}
+
+.mat-input-element {
+    margin-top: -.0625em;
+}
+
+.mat-form-field-label-wrapper {
+    top: -.84375em;
+    padding-top: .84375em;
+}
+
+.mat-form-field-label {
+    transform: translateY(-1.28125em) scale(.75) perspective(100px) translateZ(.001px);
+    width: 133.33333%;
+    display: block;
+    position: absolute;
+    left: 0;
+    font: inherit;
+    pointer-events: none;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    transform-origin: 0 0;
+}
+
+input {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+}
+
+.mat-form-field-ripple {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    transform-origin: 50%;
+    transform: scaleX(.5);
+    opacity: 0;
+    transition: background-color .3s cubic-bezier(.55,0,.55,.2);
+    background-color: rgba(0,0,0,.87);
+}
+
+.mat-form-field-subscript-wrapper {
+    margin-top: .54167em;
+    top: calc(100% - 1.66667em);
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 75%;
+}
